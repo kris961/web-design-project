@@ -1,0 +1,140 @@
+body{
+    margin:0px;
+}
+.navbar{
+    background-color: #3a4552;
+    height:40px;
+    overflow: auto;
+}
+.navbar a{
+    text-decoration: none;
+    color:white
+}
+.navbar img{
+    width: 70px;
+    height:20px;
+    object-fit: cover;
+}
+.links{
+    list-style: none;
+    max-height: 30px;
+    margin:0px;
+    padding-left: 5px;
+    padding-top: 9px;
+}
+.links li{
+    display: inline-block;
+}
+.search{
+    width:580px;
+    margin-right: 0px;
+    outline:0px;
+    border:none;
+    height:19px;
+}
+.selectC{
+    width:65px;
+    margin-right: 0px;
+    padding-right: 0px;
+    margin-left:10px;
+    float:left;
+    height:21px;
+    border:none;
+    outline: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(214, 220, 225);
+}
+body > div > ul > li:nth-child(3) > div >form>button{
+    background-color: #FEBD69;
+    border:none;
+    outline:0px;
+    height:21px;
+    float:right;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 15px;
+}
+.country{
+    color:white;
+    background-color: #3a4552;
+    border:none;
+    outline:none;
+    -webkit-appearance: none !important;
+}
+.small{
+    position: absolute;
+    font-size: 10px;
+    color:white;
+    top: -3px;
+    left:98px;
+}
+
+.unav{
+    background-color: #5a6470;
+    height:20px;
+    overflow: auto;
+}
+.ulinks{
+    list-style: none;
+    max-height: 30px;
+    margin:0px;
+    padding-left: 5px;
+}
+.ulinks li{
+    font-size: 12px;
+    display: inline-block;
+    color:white;
+}
+.ulinks li a{
+text-decoration: none;
+color:white;
+margin-left: 10px;
+}
+
+.product{
+    height:300px;
+    width:250px;
+    overflow:auto;
+    background-color: white;
+}
+.products{
+    margin-left: 100px;
+    padding-top: 180px;
+}
+.product img{
+    height:230px;
+    width:200px;
+    object-fit:contain;
+    padding-left: 25px;
+}
+.product p{
+    padding-left: 10px;
+}
+
+#SLIDE_BG{
+    width:100%;
+    height:100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 15s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image:url("/images/1.jpg")
+}
+
+@keyframes slideBg{
+    0%{
+        background-image:url("/images/1.jpg") ;
+    }
+    25%{
+        background-image:url("/images/2.jpg") ;
+    }
+    50%{
+        background-image:url("/images/3.jpg") ;
+    }
+    100%{
+        background-image:url("/images/4.jpg") ;
+    }
+}

@@ -1,0 +1,53 @@
+fieldset{
+    margin: 300px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+p{
+    margin:0px;
+}
+div{
+    margin-left: 60px;
+}
+.sub{
+    margin-top: 10px;
+    width: 172px;
+    border-radius: 5px;
+    height:20px;
+    outline: none;
+    border:1px solid;
+    background-color: #FEBD69;
+}
+p{
+    max-width: 172px;
+    margin-top:5px;
+    font-size: 10px;
+}
+h2 {
+    font-size: 20px;
+    left:320px;
+    position:absolute;
+    width: 300px; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin-top: 30px;
+ } 
+ 
+ h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .reg{
+    position: absolute;
+    left:383px;
+    margin-top: 50px;
+    width: 172px;
+    border-radius: 5px;
+    height:20px;
+    outline: none;
+    border:1px solid;
+    background-color: lightgray
+}

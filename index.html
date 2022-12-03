@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NotAmazon</title>
+    <link href="styles/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/804f102bf4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul class="links">
+            <li><img src="/images/logo_transparent.png"></li>
+            <li>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="small">Deliver to</p>
+                    <select class="country">
+                        <option>Bulgaria</option>
+                        <option>Serbia</option>
+                        <option>Romania</option>
+                        <option>Turkey</option>
+                        <option>Greece</option>
+                        <option>Albania</option>
+                    </select>
+                </div>
+            </li>
+            <li><div><form action="send.php" method="post">
+                <select class="selectC">
+                    <option>All</option>
+                    <option>Beauty and Personal Care</option>
+                </select>
+                <input class="search" type="text">
+                <button value="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form></div></li>
+            <li><a href="/signIn.html">SignIn</a></li>
+            <li><a href="/register.html">Register</a></li>
+        </ul>
+    </div>
+    <div class="unav">
+        <ul class="ulinks">
+            <li><a href="">Today's Deals</a></li>
+            <li><a href="">12 Days of Deals</a></li>
+            <li><a href="">Customer Service</a></li>
+            <li><a href="">Registry</a></li>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">Gift Cards</a></li>
+        </ul>
+    </div>
+    <div class="background" id="SLIDE_BG">
+        <table class="products">
+            <tr>
+                <td rowspan="2">
+                    <div class="product">
+                        <p>Top Deal</p>
+                        <img src="/images/product1.jpg">
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <div class="product">
+                        <p>Computers & Accessories</p>
+                        <img src="/images/product2.jpg">
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <div class="product">
+                        <p>Health & Personal care</p>
+                        <img src="/images/product3.jpg">
+                    </div>
+                </td>
+            <tr>
+        </table>
+    </div>
+</body>
