@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link href="/register/register.css" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "initializeApp": "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js",
+                "getAnalytics": "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js",
+                "getFirestore": "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js",
+                "getAuth": "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"
+            }
+        }
+      </script>
+    <script src="https://kit.fontawesome.com/804f102bf4.js" crossorigin="anonymous"></script>
+    <script src="/js/db.js" type="module"></script>
+</head>
+
+<body>
+<fieldset >
+    <legend>Register</legend>
+    <div>
+        <p>First Name</p>
+        <input name="fname" id="name" type="text" required placeholder=" " min="2">
+        <p>Last Name</p>
+        <input name="lname" id="lname" type="text" required placeholder=" " min="2">
+        <p>Email</p>
+        <input name="email" type="email" id="email" required min="6" placeholder=" ">
+        <p>Telephone number</p>
+        <input name="tel" type="tel" min="10">
+        <p>Password</p>
+        <input name="pass" type="password" id="pass1" required min="5" placeholder=" ">
+        <p>Repeat Password</p>
+        <input name="repass" id="pass2" type="password" required placeholder=" ">
+        <button class="sub" id="registerSub">Continue</button>
+    <p>By continuing you agree to NotAmazon's Conditions of Use and Privacy Notice</p>
+    </div>
+</fieldset>
+<h2>
+    <span>Already have an account?</span>
+</h2>
+<a href="/signIn.html">
+<button class="reg">Log In</button>
+</a>
+</body>
+<script>
+let name= document.getElementById("name");
+name.addEventListener('focusout',()=>{
+    if(name.value=="" || name.value.length<=2){
+      name.style.borderColor="red";
+    }
+    else{
+      name.style.borderColor="";
+      checkCorrect();
+    }
+});
+
+let lname= document.getElementById("lname");
+lname.addEventListener('focusout',()=>{
+    if(lname.value=="" || lname.value.length<=2){
+      lname.style.borderColor="red";
+    }
+    else{
+      lname.style.borderColor="";
+      checkCorrect();
+    }
+});
+
+let email= document.getElementById("email");
+email.addEventListener('focusout',()=>{
+    if(email.value=="" || email.value.length<=2){
+      email.style.borderColor="red";
+    }
+    else{
+      email.style.borderColor="";
+      checkCorrect();
+    }
+});
+
+let pass1= document.getElementById("pass1");
+pass1.addEventListener('focusout',()=>{
+    if(pass1.value=="" || pass1.value.length<6){
+      pass1.style.borderColor="red";
+    }
+    else{
+      pass1.style.borderColor="";
+      checkCorrect();
+    }
+});
+
+let pass2= document.getElementById("pass2");
+pass2.addEventListener('focusout',()=>{
+    if(pass2.value!=pass1.value || pass2.value.length<6){
+      pass2.style.borderColor="red";
+    }
+    else{
+      pass2.style.borderColor="";
+      checkCorrect();
+    }
+});
+function checkCorrect(){
+  let butn=document.getElementById("registerSub");
+  if(name.value=="" || name.value.length<=2 || lname.value=="" || lname.value.length<=2 ||
+  email.value=="" || email.value.length<=2 || pass1.value=="" || pass1.value.length<6 ||
+  pass2.value!=pass1.value || pass2.value.length<6){
+    butn.disabled=true;
+    butn.style.backgroundColor="gray";
+  }
+  else{
+    butn.disabled=false;
+    butn.style.backgroundColor="#FEBD69";
+  }
+}
+checkCorrect();
+
+</script>

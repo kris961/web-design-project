@@ -124,7 +124,7 @@ margin-left: 10px;
     background-image:url("/images/1.jpg")
 }
 
-@keyframes slideBg{
+/*@keyframes slideBg{
     0%{
         background-image:url("/images/1.jpg") ;
     }
@@ -138,3 +138,4 @@ margin-left: 10px;
         background-image:url("/images/4.jpg") ;
     }
 }
+*/

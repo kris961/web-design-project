@@ -7,11 +7,22 @@
     <title>NotAmazon</title>
     <link href="styles/index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/804f102bf4.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "initializeApp": "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js",
+                "getAnalytics": "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js",
+                "getFirestore": "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js",
+                "getAuth": "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"
+            }
+        }
+    </script>
+        <script src="/js/db.js" type="module"></script>
 </head>
 
 <body>
     <div class="navbar">
-        <ul class="links">
+        <ul class="links" id="links">
             <li><img src="/images/logo_transparent.png"></li>
             <li>
                 <div>
@@ -36,11 +47,11 @@
                 <button value="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form></div></li>
             <li><a href="/signIn.html">SignIn</a></li>
-            <li><a href="/register.html">Register</a></li>
+            <li><a href="/register/register.html">Register</a></li>
         </ul>
     </div>
     <div class="unav">
-        <ul class="ulinks">
+        <ul class="ulinks" id="ulinks">
             <li><a href="">Today's Deals</a></li>
             <li><a href="">12 Days of Deals</a></li>
             <li><a href="">Customer Service</a></li>
